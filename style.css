@@ -1,0 +1,174 @@
+/* Base Styles (Desktop) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./photo_2024-07-31_23-00-59.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 10px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Center navigation horizontally */
+    align-items: center;
+    max-width: 1200px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    margin-top: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.join-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); 
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    position: relative; 
+    left: -200px; 
+}
+p{
+    margin-left: 300px;
+    width: 800px;
+}
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    width: auto; 
+}
+
+p {
+    margin-top: 20px; 
+    color: #777;
+    font-size: 18px;
+}
+
+.highlight {
+    color: #000;
+}
+
+.crypto {
+    color: #00b0ff;
+}
+
+.svytex {
+    color: #00b0ff;
+}
+
+.description {
+    color: #777;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .join-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 10px;
+        left: 0; 
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-top: 0;
+    }
+
+    .join-button {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .container {
+        padding: 5px;
+        left: 0; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

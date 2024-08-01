@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('./photo_2024-07-31_23-00-59.jpg') no-repeat center center fixed; /* Add your background image */
+    background-size: cover;
+}
+
+.container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1rem;
+    position: absolute;
+top: -90px;
+    left: 20px;
+    color: #000; 
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+main h2 {
+    font-size: 4rem;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.25rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+button {
+    background: linear-gradient(to right, #81d4fa, #b3e5fc);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: linear-gradient(to right, #4fc3f7, #81d4fa);
+}
+
+aside img {
+    width: 413px;
+    height: 401px;
+    object-fit: cover;
+}
